@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #fff;
+}
+header, footer {
+  background-color: #000;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+  padding: 20px 0;
+  align-items: center;
+}
+.cabecalho .logo {
+  text-decoration: none;
+}
+.cabecalho .logo > :nth-child(1) {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+.cabecalho .logo > :nth-child(2) {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.menu .item-menu {
+  color: #fff;
+}
+.menu .item-menu:hover {
+  color: #b9b6b6;
+}
+.menu .item-menu.active {
+  color: #938d85;
+}
+/* CABEÇALHO */
