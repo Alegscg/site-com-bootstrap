@@ -30,6 +30,7 @@ header, footer {
 
 .menu .item-menu {
   color: #fff;
+  display: flex;
 }
 .menu .item-menu:hover {
   color: #b9b6b6;
@@ -38,3 +39,63 @@ header, footer {
   color: #938d85;
 }
 /* CABEÇALHO */
+
+/* RODAPÉ */
+.rodape {
+  padding: 20px;
+}
+.rodape .box-logo {
+  text-decoration: none;
+  text-align: center;
+}
+.rodape .box-logo > :nth-child(1) {
+  font-size: 32px;
+  font-weight: bold;
+}
+.rodape .box-logo > :nth-child(2) {
+  font-size: 12px;
+  font-style: italic;
+}
+.menu-rodape .titulo,
+.newsletter .titulo {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.menu-rodape .itens > .item {
+  text-decoration: none;
+  margin-left: 14px;
+  display: flex;
+}
+.menu-rodape .itens > .item li {
+  font-size: 14px;
+  font-style: italic;
+}
+.rodape .box-news .news-btn {
+  margin-top: 5px;
+}
+.rodape .box-news .news-btn,
+.rodape .box-news .news-email {
+  font-size: 15px;
+}
+.rodape .autores {
+  font-size: 12px;
+  justify-content: center;
+  margin: 5px 0;
+}
+.rodape .autores > .autor {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+.rodape .autores > .autor img {
+  width: 13px;
+  height: 13px;
+}
+.rodape .autores > .autor span {
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+/* RODAPÉ */
