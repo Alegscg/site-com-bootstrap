@@ -38,11 +38,39 @@ header, footer {
 .menu .item-menu.active {
   color: #938d85;
 }
+@media (max-width: 767px) {
+  .icone-menu-mobile {
+    display: flex !important;
+    right: 20px;
+    font-size: 75px;
+    justify-content: end;
+    cursor: pointer;
+  }
+  .menu .nav {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu .nav.aberto {
+    display: flex;
+  }
+  .menu .nav .item-menu {
+    display: inline-flex;
+    justify-content: end;
+    width: 100%;
+  }
+}
 /* CABEÇALHO */
 
 /* RODAPÉ */
 .rodape {
   padding: 20px;
+}
+.rodape > :nth-child(n) {
+  flex-wrap: wrap;
 }
 .rodape .box-logo {
   text-decoration: none;
@@ -97,5 +125,78 @@ header, footer {
   font-size: 11px;
   margin-left: 5px;
 }
-
 /* RODAPÉ */
+
+/* VITRINES */
+.vitrine {
+  margin: 15px 0;
+}
+.vitrine .titulo > span {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  background-color: #d5d0d0;
+  padding: 10px 50px 5px 10px;
+  border-radius: 5px 50px 0px 0px;
+}
+.vitrine .titulo,
+.vitrine .itens {
+  width: 100%;
+}
+.vitrine .itens {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vitrine .itens .item:hover {
+  background-color: #f1f1f1;
+}
+.vitrine .item .nome-produto {
+  color: #353535;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.vitrine .item .imagem > img {
+  width: 100%;
+}
+.vitrine .item .box-precos {
+  margin: 10px 0;
+}
+.vitrine .item .box-precos > :nth-child(n) {
+  display: block;
+  width: 100%;
+  color: #353535;
+  font-size: 14px;
+}
+.vitrine .item .box-precos > .preco-de {
+  text-decoration: line-through;
+}
+.vitrine .item .box-precos > .preco-por {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0e3e0e;
+}
+.vitrine .item .btn-comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .vitrine .item .imagem {
+    display: flex;
+    justify-content: center;
+  }
+  .vitrine .item .imagem > img {
+    width: 55%
+  }
+}
+/* VITRINES */
+
+@media(max-width: 767px) {
+  .box-avaliacoes > :nth-child(n):not(:first-child) {
+    margin-top: 0;
+  }
+  .rodape > :nth-child(1) > :nth-child(n) {
+    margin: 10px 0;
+  }
+}
